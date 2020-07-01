@@ -11,7 +11,7 @@ My improvement is to remove the need for subrepo paths as command line arguments
 - Bash 4+
 - Git
 - AWK
-- Gource
+- Gource - https://gource.io/ and https://github.com/acaudwell/Gource
 - FFMPEG
 
 # HOWTO

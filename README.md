@@ -15,4 +15,4 @@ My improvement is to remove the need for subrepo paths as command line arguments
 - FFMPEG
 
 # HOWTO
-Save autogource.sh in the top repo with all the git submodules below, chmod +x gource.sh, then run ./autogource.sh
+Save autogource.sh in the top repo with all the git submodules below, chmod +x autogource.sh, then run ./autogource.sh

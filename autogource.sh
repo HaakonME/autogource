@@ -3,7 +3,7 @@
 # by Haakon Meland Eriksen.
 # Based on derEremit's wonderful script (?) or anonymous, which was nearly there. 
 # My improvement is to remove the need for subrepo paths as command line arguments - in my case, 95 arguments. 8-) Enjoy! :-)
-# HOWTO: save autogource.sh in the top repo with all the git submodules below, chmod +x gource.sh, then run ./autogource.sh
+# HOWTO: save autogource.sh in the top repo with all the git submodules below, chmod +x autogource.sh, then run ./autogource.sh
 
 # Get submodules paths into array
 

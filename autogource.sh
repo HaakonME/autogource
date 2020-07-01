@@ -12,11 +12,13 @@ submodules=($(git config --file .gitmodules --get-regexp path | awk '{ print $2 
 # Include main repo by adding main repo as a path into the array of submodules
 submodules+=('.')
 
-# Loop through all repos in array and create temporary logfiles for gource for each repo
+# Loop through all repos in array and create temporary logfiles for gource for each repo.
+# Each submodule gets its own directory if using sed, remove the comment sign to use sed.
 for submodule in "${submodules[@]}"
 do
 	logfile="$(mktemp /tmp/gource.XXXXXX)"
 	gource --output-custom-log "${logfile}" ${submodule}
+#	sed -i -E "s#(.+)\|#\1|/${submodule}#" ${logfile}	
 	logs[$i]=$logfile
 	let i=$i+1
 done
